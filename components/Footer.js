@@ -2,17 +2,19 @@ import Link from 'next/link'
 
 const Footer = () => (
 	<div className="footer">
-        <span>Sitio desarrollado por </span>
-		<Link href="www.gamesessi0n.com">
-			<a>GameSessi0n</a>
-		</Link>
+		<div className="container-fluid">
+	        <span>Sitio desarrollado por </span>
+			<Link href="https://gamesessi0n.com">
+				<a target="_blank">GameSessi0n</a>
+			</Link>
+		</div>
         <style jsx>{`
-            .footer {
-                margin-top: 15px;
+			.container-fluid {
+				max-width: 1170px;
                 padding: 15px;
                 background: #1d1d1d;
                 border-radius: 10px;
-            }
+			}
         `}</style>
 	</div>
 )

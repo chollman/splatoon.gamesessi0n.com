@@ -14,7 +14,7 @@
       "env":{
           "YOUTUBE_API_KEY":"@youtube-api-key"
       }
-  }
+  },
   "dependencies": {
     "next": "2.3.1",
     "react": "15.5.4",

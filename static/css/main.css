@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Londrina';
+	src: url('/static/fonts/LondrinaSolid-Regular.eot');
+	src: url('/static/fonts/LondrinaSolid-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/LondrinaSolid-Regular.woff2') format('woff2'),
+		url('/static/fonts/LondrinaSolid-Regular.woff') format('woff'),
+		url('/static/fonts/LondrinaSolid-Regular.otf') format('otf'),
+		url('/static/fonts/LondrinaSolid-Regular.ttf') format('truetype'),
+		url('/static/fonts/LondrinaSolid-Regular.svg#LondrinaSolid-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Londrina';
+}

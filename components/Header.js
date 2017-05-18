@@ -3,13 +3,15 @@ import Button from 'react-bootstrap/lib/Button'
 
 const Header = () => (
 	<div className="header">
-		<Link href="/">
-			<a>Home</a>
-		</Link>
-		<Button>Default</Button>
+		<div className="container-fluid">
+			<Link href="/">
+				<a>Home</a>
+			</Link>
+			<Button>Default</Button>
+		</div>
 		<style jsx>{`
-			.header {
-				margin-bottom: 15px;
+			.container-fluid {
+				max-width: 1170px;
 				padding: 15px;
 				border-radius: 10px;
 				background: #1d1d1d;

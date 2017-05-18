@@ -5,14 +5,17 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const Index = () => (
 	<div>
 		<Layout>
-			<div className="content">Splatoon 2</div>
+			<div className="container-fluid">
+				<h1>Splatoon 2</h1>
+			</div>
 		</Layout>
+
 		<style jsx>{`
-			.content {
-				padding: 15px;
-				background: #fff;
-				border-radius: 10px;
-				border: 5px solid #1d1d1d;
+			.container-fluid {
+				max-width: 1170px;
+			}
+			h1 {
+				color: #cdf523;
 			}
 		`}</style>
 	</div>
