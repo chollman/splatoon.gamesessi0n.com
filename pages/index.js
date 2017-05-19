@@ -1,4 +1,7 @@
-import Layout from "../components/MyLayout"
+import Layout from "../components/MyLayout";
+import { initStore } from '../store'
+import withRedux from 'next-redux-wrapper'
+import GameSessionsList from "../containers/GameSessionsList"
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
@@ -7,6 +10,8 @@ const Index = () => (
 		<Layout>
 			<div className="container-fluid">
 				<h1>Splatoon 2</h1>
+
+				<GameSessionsList />
 			</div>
 		</Layout>
 
@@ -21,4 +26,4 @@ const Index = () => (
 	</div>
 );
 
-export default Index;
+export default withRedux(initStore, null)(Index)

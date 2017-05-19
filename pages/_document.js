@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
 					<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
 					<link rel="stylesheet" href="/static/css/main.css" />
 				</Head>
-				<body className="clearfix">
+				<body>
 					<Main />
 					<NextScript />
 				</body>
