@@ -1,24 +1,25 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Link from 'next/link';
 
-import { initStore } from '../store'
+import { initStore } from '../store';
+//import GameSessionItem from '../components/GameSessionItem'
 
 class GameSessionsList extends React.Component {
-    test() {
-        console.log(this.props.gameSessions);
-    }
-
-    render() {
+    renderSessions() {
         return (
-            <div>
-                <span>Lista de sesiones</span>
-                <ul>
-                    {this.props.gameSessions.map(session => {
-                        //TODO Crear componente
-                        return <li key={session.id}>
-                            <h3>Game</h3>
-                            <span>{session.game}</span>
+            _.map(this.props.gameSessions, session => {
+                let button = '';
+                if (session.open) {
+                    button = <div>Abierta</div>;
+                }
+
+                return <div key={session.id}>
+                    <Link href="/test">
+                        <li className="col-md-4">
+                            <h3>{session.type}</h3>
                             <div>
                                 <h4>Players</h4>
                                 <ul>
@@ -27,8 +28,20 @@ class GameSessionsList extends React.Component {
                                     })}
                                 </ul>
                             </div>
-                        </li>;
-                    })}
+                            <span>{button}</span>
+                        </li>
+                    </Link>
+                </div>;
+            })
+        );
+    }
+
+    render() {
+        return (
+            <div>
+                <span>Lista de sesiones</span>
+                <ul className="row">
+                    {this.renderSessions()}
                     <style jsx>{`
                         h3, h4 { color: #cdf523 }
                         div { padding-left: 30px; }

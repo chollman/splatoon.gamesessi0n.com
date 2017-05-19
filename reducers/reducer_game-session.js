@@ -11,7 +11,9 @@ export default function () {
                     name: "Juampi"
                 }
             ],
-            slots: 8
+            slots: 8,
+            type: 'Cooperativa',
+            open: true
         },
         {
             id: 2,
@@ -21,7 +23,9 @@ export default function () {
                     name: "Fefo"
                 }
             ],
-            slots: 4
+            slots: 4,
+            type: 'Torneo',
+            open: false
         }
     ]
 }

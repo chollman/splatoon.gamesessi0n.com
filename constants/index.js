@@ -1,1 +1,3 @@
-export const GREEN = '#cdf523';
+export const VARIABLES = {
+    "GREEN": '#cdf523'
+}

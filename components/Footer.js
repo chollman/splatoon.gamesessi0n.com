@@ -1,28 +1,33 @@
 import Link from 'next/link';
-import { GREEN } from '../constants'
+import { VARIABLES } from '../constants'
 
 const Footer = () => (
-	<div className="footer">
+	<div>
 		<div className="container-fluid">
-	        <span>Sitio desarrollado por </span>
-			<Link href="https://gamesessi0n.com">
-				<a target="_blank">GameSessi0n</a>
-			</Link>
+			<div className="row">
+				<div className="col-md-12">
+					<div className="footer">
+						<span>Sitio desarrollado por </span>
+						<Link href="https://gamesessi0n.com">
+							<a target="_blank">GameSessi0n</a>
+						</Link>
+					</div>
+				</div>
+			</div>
 		</div>
         <style jsx>{`
 			.container-fluid {
 				max-width: 1170px;
-                padding: 15px;
-                border-radius: 10px;
 			}
 
 			.footer {
-				position: relative;
 				color: #fff;
+				position: relative;
+				padding: 15px 0;
 			}
 
 			a {
-				color: ${GREEN};
+				color: ${VARIABLES.GREEN};
 			}
 
 			.footer:before {
@@ -33,8 +38,10 @@ const Footer = () => (
 				left: 0;
 				z-index: -1;
 				content: " ";
+				display: block;
 				background: #1d1d1d;
-				transform: perspective(500px) rotateX(-10deg) rotateY(-8deg) rotateZ(0deg) translateX(-8%) translateY(26%);
+				transform: perspective(500px) rotateX(-10deg) rotateY(-8deg) rotateZ(0deg) translateX(-8%) translateY(26%) scaleX(1.1);
+				box-shadow: #fff 4px 4px 0px;
 			}
         `}</style>
 	</div>
