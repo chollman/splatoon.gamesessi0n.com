@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import { GREEN } from '../constants'
 
 const Footer = () => (
 	<div className="footer">
@@ -12,8 +13,28 @@ const Footer = () => (
 			.container-fluid {
 				max-width: 1170px;
                 padding: 15px;
-                background: #1d1d1d;
                 border-radius: 10px;
+			}
+
+			.footer {
+				position: relative;
+				color: #fff;
+			}
+
+			a {
+				color: ${GREEN};
+			}
+
+			.footer:before {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				content: " ";
+				background: #1d1d1d;
+				transform: perspective(500px) rotateX(-10deg) rotateY(-8deg) rotateZ(0deg) translateX(-8%) translateY(26%);
 			}
         `}</style>
 	</div>
