@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint src/. & eslint pages/.; exit 0"
   },
   "keywords": [],
   "author": "gamesessi0n.com",
@@ -28,6 +29,7 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.0.1",
     "standard": "^10.0.2"
   }
 }

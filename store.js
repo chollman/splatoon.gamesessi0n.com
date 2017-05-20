@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import ReduxPromise from 'redux-promise';
 
-import reducers from './reducers';
+import reducers from './src/reducers';
 
 const initialState = {
 
