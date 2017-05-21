@@ -8,6 +8,9 @@ const Header = () => (
       <Link href="/">
         <a>Home</a>
       </Link>
+      <Link href="/test">
+        <a>test</a>
+      </Link>
       <Button>Default</Button>
     </div>
     <style jsx>{`

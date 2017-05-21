@@ -15,7 +15,7 @@ const Index = () => (
         <div className="row">
           <div className="col-md-8">
             <h1>Splatoon 2</h1>
-
+            
             <GameSessionsList />
           </div>
           <div className="col-md-4">
@@ -36,9 +36,9 @@ const Index = () => (
         position: absolute;
         right: 0;
         top: 0;
-        width: 500px;
+        width: 670px;
         height: 500px;
-        background: url(/static/img/inkling-girl.png) no-repeat;
+        background: url(/static/img/inkling-girl2.png) no-repeat;
         background-size: cover;
       }
       `}</style>

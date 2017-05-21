@@ -18,20 +18,18 @@ class GameSessionsList extends React.Component {
         }
 
         return <div key={session.id}>
-        <Link href="/test">
-        <li className="col-md-4">
-        <h3>{session.type}</h3>
-        <div>
-        <h4>Players</h4>
-        <ul>
-        {session.players.map(player => {
-          return <li key={player.name}>{player.name}</li>
-        })}
-        </ul>
-        </div>
-        <span>{button}</span>
-        </li>
-        </Link>
+          <li className="col-md-4">
+            <h3>{session.type}</h3>
+            <div>
+              <h4>Players</h4>
+              <ul>
+                {session.players.map(player => {
+                  return <li key={player.name}>{player.name}</li>
+                })}
+              </ul>
+            </div>
+            <span>{button}</span>
+          </li>
         </div>
       })
     )
@@ -40,15 +38,15 @@ class GameSessionsList extends React.Component {
   render () {
     return (
       <div>
-      <span>Lista de sesiones</span>
-      <ul className="row">
-      {this.renderSessions()}
-      <style jsx>{`
+        <span>Lista de sesiones</span>
+        <ul className="row">
+          {this.renderSessions()}
+          <style jsx>{`
         h3, h4 { color: #cdf523 }
         div { padding-left: 30px; }
         `}</style>
         </ul>
-        </div>
+      </div>
     )
   }
 }

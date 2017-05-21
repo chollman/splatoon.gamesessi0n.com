@@ -20,7 +20,6 @@ const Footer = () => (
     .container-fluid {
       max-width: 1170px;
     }
-
     .footer {
       color: #fff;
       position: relative;
