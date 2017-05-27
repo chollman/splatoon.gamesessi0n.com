@@ -2,10 +2,6 @@ import React from 'react'
 import NavLink from './NavLink'
 import Link from 'next/link'
 import Navbar from 'react-bootstrap/lib/Navbar'
-import Nav from 'react-bootstrap/lib/Nav'
-import NavItem from 'react-bootstrap/lib/NavItem'
-
-import { VARIABLES } from '../constants'
 
 class NavbarMenu extends React.Component {
   render () {
@@ -23,14 +19,10 @@ class NavbarMenu extends React.Component {
           <Navbar.Collapse>
             <ul className="nav navbar-nav">
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/test">Test</NavLink>
             </ul>
           </Navbar.Collapse>
           <div className="drips"></div>
         </Navbar>
-        <Link href="/test">
-          <a>Home</a>
-        </Link>
         <style jsx>{`
           a.active {
             color: red;

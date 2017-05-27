@@ -1,18 +1,19 @@
 import React from 'react'
 import Router from 'next/router'
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 
 class NavLink extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      "isActive": ""
+      'isActive': ''
     }
   }
 
   componentDidMount () {
-    const isActive = Router.route == this.props.to ? "active" : ""
-    this.setState({"isActive": isActive})
+    const isActive = Router.route === this.props.to ? 'active' : ''
+    this.setState({'isActive': isActive})
   }
 
   render () {
@@ -24,6 +25,11 @@ class NavLink extends React.Component {
       </li>
     )
   }
+}
+
+NavLink.propTypes = {
+  to: PropTypes.string,
+  children: PropTypes.node
 }
 
 export default NavLink
