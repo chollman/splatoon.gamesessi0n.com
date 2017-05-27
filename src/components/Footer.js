@@ -4,7 +4,7 @@ import { VARIABLES } from '../constants'
 
 const Footer = () => (
   <div>
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
         <div className="col-md-12">
           <div className="footer">
@@ -17,9 +17,6 @@ const Footer = () => (
       </div>
     </div>
     <style jsx>{`
-    .container-fluid {
-      max-width: 1170px;
-    }
     .footer {
       color: #fff;
       position: relative;

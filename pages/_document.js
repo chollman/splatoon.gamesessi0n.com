@@ -6,11 +6,9 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          {/* Latest compiled and minified CSS */}
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
-          {/* Optional theme */}
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
-
           <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
           <link rel="stylesheet" href="/static/css/main.css" />
         </Head>

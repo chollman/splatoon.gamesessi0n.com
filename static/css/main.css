@@ -14,3 +14,25 @@
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Londrina';
 }
+
+/******************** NAVBAR *************************/
+
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #F02D7D;
+  background-image: none;
+  border: none;
+  position: relative;
+}
+
+.navbar-brand {
+  height: 87px;
+}
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav>li>a {
+    line-height: 57px;
+  }
+}

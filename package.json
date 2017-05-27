@@ -7,7 +7,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/. & eslint pages/.; exit 0"
+    "lint": "eslint src/. & eslint pages/.; exit 0",
+    "fix": "eslint --fix src/. & eslint pages/.; exit 0"
   },
   "keywords": [],
   "author": "gamesessi0n.com",

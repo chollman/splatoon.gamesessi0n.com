@@ -1,29 +1,41 @@
 import React from 'react'
 import Link from 'next/link'
-import Button from 'react-bootstrap/lib/Button'
+import NavbarMenu from './NavbarMenu'
+
+import { VARIABLES } from '../constants'
 
 const Header = () => (
   <div className="header">
-    <div className="container-fluid">
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/test">
-        <a>test</a>
-      </Link>
-      <Button>Default</Button>
-    </div>
-    <style jsx>{`
-      .container-fluid {
-        max-width: 1170px;
-        padding: 15px;
-        border-radius: 10px;
-        background: #1d1d1d;
-      }
-      a {
-        color: red;
-      }
-    `}</style>
+    <NavbarMenu />
+    {/*<nav className="navbar navbar-default">
+      <div className="container">
+        <div className="navbar-header">
+          <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <a className="navbar-brand" href="#">
+            <img alt="Brand" src="/static/img/logo.png" width="100" height="57" />
+          </a>
+        </div>
+        <div className="collapse navbar-collapse">
+          <ul className="nav navbar-nav">
+            <li className="active">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/test">
+                <a>Test</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>*/}
   </div>
 )
 

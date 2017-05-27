@@ -8,7 +8,7 @@ import { VARIABLES } from '../src/constants'
 
 // const API_KEY = process.env.YOUTUBE_API_KEY
 
-const Index = () => (
+const Test = () => (
   <div>
     <Layout>
       <div className="container inkling-girl">
@@ -27,7 +27,6 @@ const Index = () => (
       }
       .inkling-girl {
         min-height: 500px;
-        background: url(/static/img/inkling-girl2.png) no-repeat;
         background-size: contain;
         background-position: right;
       }
@@ -35,4 +34,4 @@ const Index = () => (
   </div>
   )
 
-export default withRedux(initStore, null)(Index)
+export default withRedux(initStore, null)(Test)
