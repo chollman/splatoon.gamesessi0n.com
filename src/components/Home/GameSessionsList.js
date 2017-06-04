@@ -1,11 +1,6 @@
-import _ from 'lodash'
 import React from 'react'
+import _ from 'lodash'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-// import { bindActionCreators } from 'redux'
-
-// import { initStore } from '../../store'
-// import GameSessionItem from '../components/GameSessionItem'
 
 class GameSessionsList extends React.Component {
   renderSessions () {
@@ -33,7 +28,6 @@ class GameSessionsList extends React.Component {
       })
     )
   }
-
   render () {
     return (
       <div>
@@ -41,9 +35,9 @@ class GameSessionsList extends React.Component {
         <ul className="row">
           {this.renderSessions()}
           <style jsx>{`
-        h3, h4 { color: #cdf523 }
-        div { padding-left: 30px; }
-        `}</style>
+            h3, h4 { color: #cdf523 }
+            div { padding-left: 30px; }
+          `}</style>
         </ul>
       </div>
     )
@@ -54,10 +48,4 @@ GameSessionsList.propTypes = {
   gameSessions: PropTypes.array
 }
 
-function mapStateToProps (state) {
-  return {
-    gameSessions: state.gameSessions
-  }
-}
-
-export default connect(mapStateToProps)(GameSessionsList)
+export default GameSessionsList

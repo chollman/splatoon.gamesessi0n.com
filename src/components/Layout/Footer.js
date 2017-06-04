@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { VARIABLES } from '../constants'
+import { VARIABLES } from '../../constants'
 
 const Footer = () => (
   <div>

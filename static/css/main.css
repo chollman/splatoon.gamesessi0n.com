@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 87px;
 }
 
+.navbar .navbar-nav li a {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .navbar-default .navbar-nav>li>a {
     line-height: 57px;

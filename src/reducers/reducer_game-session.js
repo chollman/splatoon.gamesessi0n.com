@@ -12,7 +12,8 @@ export default function () {
       ],
       slots: 8,
       type: 'Cooperativa',
-      open: true
+      open: true,
+      time: '28-07-2017 18:00'
     }, {
       id: 2,
       game: 'Splatoon 2',
@@ -23,7 +24,8 @@ export default function () {
       ],
       slots: 4,
       type: 'Torneo',
-      open: false
+      open: false,
+      time: '28-07-2017 19:00'
     }
   ]
 }
