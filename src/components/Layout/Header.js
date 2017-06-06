@@ -3,7 +3,7 @@ import NavbarMenu from './NavbarMenu'
 
 const Header = () => (
   <div className="header">
-    <NavbarMenu isAuthed={true}/>
+    <NavbarMenu isAuthed={false}/>
   </div>
 )
 

@@ -28,6 +28,19 @@ class GameSessionsList extends React.Component {
       })
     )
   }
+
+  renderGames () {
+    return (
+      _.map(this.props.games, game => {
+        return <div key={game.id}>
+          <li className="col-xs-12">
+            <h3>{game.name}</h3>
+          </li>
+        </div>
+      })
+    )
+  }
+
   render () {
     return (
       <div>
@@ -39,13 +52,17 @@ class GameSessionsList extends React.Component {
             div { padding-left: 30px; }
           `}</style>
         </ul>
+        <ul className="row">
+          {this.renderGames()}
+        </ul>
       </div>
     )
   }
 }
 
 GameSessionsList.propTypes = {
-  gameSessions: PropTypes.array
+  gameSessions: PropTypes.array,
+  games: PropTypes.array
 }
 
 export default GameSessionsList
